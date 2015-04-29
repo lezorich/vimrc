@@ -46,6 +46,9 @@
 " Sets how many lines of history VIM has to remember
 set history=700
 
+" Sets the line numbers
+set number
+
 " Enable filetype plugins
 filetype plugin on
 filetype indent on
@@ -65,6 +68,9 @@ nmap <leader>w :w!<cr>
 " (useful for handling the permission-denied error)
 command W w !sudo tee % > /dev/null
 
+" Project specific options
+set exrc
+set secure
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
