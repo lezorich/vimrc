@@ -1,0 +1,3 @@
+[submodule "sources_non_forked/railscasts-theme"]
+	path = sources_non_forked/railscasts-theme
+	url = git@github.com:jpo/vim-railscasts-theme.git
