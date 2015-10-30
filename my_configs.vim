@@ -28,17 +28,6 @@ let g:airline#extensions#tabline#enabled = 1
 " Show just the name in airline tabline
 let g:airline#extensions#tabline#fnamemod = ':t'
 
-"""""""""""""""""""""""""""""""""""""""""""""
-" Ack
-""""""""""""""""""""""""""""""""""""""""""""
-
-" Use ag instead of ack (it's faster!)
-let g:ackprg = 'ag --nogroup --nocolor --column'
-
-" Open Ack and put the cursor in the right position
-" The ! is for not jumping to the first result
-map <leader>g :Ack! 
-
 """"""""""""""""""""""""""""""""""""""""""
 " NerdTree
 """""""""""""""""""""""""""""""""""""""""
