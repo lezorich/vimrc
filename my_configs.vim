@@ -39,6 +39,15 @@ let NERDTreeMapOpenVSplit='v'
 let MRU_Exclude_Files = '^/build/.*\|^/tmp/.*'
 
 """"""""""""""""""""""""""""""""""
+" Ctrlp
+"""""""""""""""""""""""""""""""
+
+" Use ag if available
+if executable('ag')
+    let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+endif
+
+""""""""""""""""""""""""""""""""""
 " Syntastic
 """"""""""""""""""""""""""""""""""
 set statusline+=%#warningmsg#
