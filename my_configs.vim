@@ -18,6 +18,15 @@ if has("gui_running")
     endif
 endif
 
+" Remove trailing whitespaces
+fun! TrimWhitespace()
+    let l:save_cursor = getpos('.')
+    %s/\s\+$//e
+    call setpos('.', l:save_cursor)
+endfun
+
+:nnoremap <Leader>tw :call TrimWhitespace()<CR>
+
 " YouCompleteMe
 let g:ycm_key_list_select_completion=[]
 let g:ycm_key_list_previous_completion=[]
