@@ -1,6 +1,10 @@
 " Set colorscheme
 colorscheme railscasts
 
+" Show eol ¬
+set list
+set lcs=eol:¬
+
 " C++ identation config
 set cinoptions+=g1,h1
 
