@@ -5,6 +5,9 @@ colorscheme railscasts
 set list
 set lcs=eol:¬
 
+" Choose eol colors
+highlight NonText ctermfg=237
+
 " Show tabline only with 2 or more tabs
 set showtabline=1
 
