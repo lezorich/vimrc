@@ -2,11 +2,20 @@
 colorscheme railscasts
 
 " Show eol ¬
+nmap <silent> <leader>a :set list!<CR>
 set list
 set lcs=eol:¬
 
 " Choose eol colors
 highlight NonText ctermfg=237
+
+" Show commands
+set showcmd
+
+set undolevels=5000
+
+" Show cursor column
+" set cursorcolumn
 
 " Show tabline only with 2 or more tabs
 set showtabline=1
@@ -20,6 +29,14 @@ set splitright
 
 " Set column
 set colorcolumn=80
+
+" Copy & paste to system clipboard
+nnoremap <leader>y "+y
+nnoremap <leader>p "+p
+nnoremap <leader>P "+P
+vnoremap <leader>y "+y
+vnoremap <leader>p "+p
+vnoremap <leader>P "+P
 
 " Set gvim font
 if has("gui_running")
