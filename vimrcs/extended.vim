@@ -34,10 +34,10 @@ set guioptions-=L
 " Colorscheme
 if has("gui_running")
     set background=dark
-    colorscheme molokai
+    colorscheme peaksea
 else
-    colorscheme molokai
-    let g:colors_name="molokai"
+    colorscheme desert
+    let g:colors_name="desert"
 endif
 let g:airline_theme="bubblegum"
 
